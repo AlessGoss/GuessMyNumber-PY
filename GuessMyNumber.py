@@ -1,4 +1,5 @@
 import random
+import time
 while True:
  rnd = random
  number = rnd.randrange(1, 99999)
@@ -11,6 +12,7 @@ while True:
    except KeyboardInterrupt:
     print("Exiting.")
     print("Come back if you want to play again!")
+    time.sleep(5)
     exit(0)
    except ValueError:
     print("Type a number.")
